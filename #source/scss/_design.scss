@@ -1,0 +1,21 @@
+.design {
+    background: linear-gradient(rgba(255, 255, 255, 0.8)), url(../../img/background_2.jpg);
+    background-size: cover;
+    padding: 60px 0 60px 0;
+    &__images {
+        position: relative;
+        text-align: center;
+    }
+
+    &__tablet {
+        width: 686px;
+        height: 525px;
+    }
+
+    &__phone {
+        width: 200px;
+        height: 412px;
+        position: absolute;
+        transform: translate(-156px, 215px);
+    }
+}

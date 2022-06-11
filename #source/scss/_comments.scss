@@ -1,0 +1,64 @@
+.comments {
+    background: #f8f8f8;
+    padding: 42px 0;
+    &__row {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 80px;
+            left: 0;
+            display: inline-block;
+            width: 22.23px;
+            height: 22.23px;
+            border-bottom: 2px solid #c6cbcd;
+            border-left: 2px solid #c6cbcd;
+            transform: rotate(45deg);
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            top: 80px;
+            right: 0;
+            display: block;
+            width: 22.23px;
+            height: 22.23px;
+            border-top: 2px solid #c6cbcd;
+            border-right: 2px solid #c6cbcd;
+            transform: rotate(45deg);
+        }
+    }
+    &__image {
+        padding: 35px;
+        margin: 0 30px 0 0;
+        border: 2px solid #95e1d3;
+    }
+    &__body {
+        padding: 5px 0;
+    }
+    &__text {
+        font-style: italic;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: #a9afb1;
+        max-width: 770px;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: -55px;
+            left: 0;
+            width: 70px;
+            height: 4px;
+            background-color: #f38281;
+        }
+    }
+    &__name {
+        margin: 40px 0 0 156px;
+        font-family: "Kaushan Script";
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,15 @@
+.map {
+    padding: 46px 0 50px 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.8)), url(../../img/background_4.jpg);
+    background-size: cover;
+    &__img {
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+    &__separator{
+        margin-bottom: 0;
+    }
+    &__title {
+        color: #f38281;
+    }
+}

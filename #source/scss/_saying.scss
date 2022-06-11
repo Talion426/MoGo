@@ -1,0 +1,49 @@
+.saying {
+    background: linear-gradient(rgba(255, 255, 255, 0.8)), url(../../img/background_3.jpg);
+    background-size: cover;
+    padding: 70px 0 0 0;
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -25px;
+    }
+    &__column {
+        flex: 1 0 50%;
+        padding: 0 25px;
+    }
+}
+.saying-item {
+    &__row {
+        display: flex;
+        margin: 0 0 60px 0;
+    }
+    &__image {
+        margin: 0 50px 0 0;
+    }
+    &__body {
+        max-width: 369px;
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #2d3033;
+        margin: 0 0 15px 0;
+    }
+    &__prof {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #2d3033;
+    }
+    &__separator {
+        width: 70px;
+        height: 4px;
+        background-color: #f38281;
+        margin: 25px 0 50px 0;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 21px;
+        color: #2d3033;
+    }
+}

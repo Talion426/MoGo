@@ -1,0 +1,17 @@
+.about {
+    margin: 60px 0 108px 0;
+    &__text {
+        margin: 0 0 108px 0;
+    }
+    &__images {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    &__image {
+        display: block;
+        width: 370px;
+        height: 338px;
+        position: relative;
+    }
+}

@@ -1,0 +1,61 @@
+@import "nullstyle.scss";
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script:regular);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: Raleway;
+}
+.main {
+    flex: 1 0 auto;
+}
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.title {
+    font-weight: 900;
+    font-size: 36px;
+    color: #2d3033;
+    text-transform: uppercase;
+    text-align: center;
+}
+.subtitle {
+    font-family: "Kaushan Script";
+    font-size: 30px;
+    color: #2d3033;
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+.separator {
+    width: 170px;
+    height: 4px;
+    background-color: #f38281;
+    margin: 40px auto;
+}
+.text {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+@import "_welcome.scss";
+@import "_header.scss";
+@import "_about.scss";
+@import "_projects.scss";
+@import "_services.scss";
+@import "_design.scss";
+@import "_what.scss";
+@import "_comments.scss";
+@import "_meet.scss";
+@import "_icons.scss";
+@import "_works.scss";
+@import "_grid.scss";
+@import "_message.scss";
+@import "_saying.scss";
+@import "_latest.scss";
+@import "_map.scss";

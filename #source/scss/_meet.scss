@@ -1,0 +1,46 @@
+.meet {
+    padding: 100px 0 84px 0;
+    &__row {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        margin: 100px 0 0 0;
+    }
+    &__image {
+        width: 370px;
+        height: 424px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+            transform: translate(0, 0) scaleX(0);
+            transform-origin: left 0;
+            transition: transform 0.25s;
+        }
+        &:hover::before {
+            content: "";
+            transform: translate(-16px, -16px) scaleX(1);
+            transform-origin: right 0;
+            transition: transform 0.25s;
+        }
+    }
+    &__name {
+        margin: 30px 0 40px 0;
+        font-weight: 700;
+        font-size: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #2d3033;
+    }
+    &__prof {
+        font-size: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #2d3033;
+    }
+}
