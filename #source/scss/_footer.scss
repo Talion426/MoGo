@@ -1,0 +1,16 @@
+.footer {
+    background: #f8f8f8;
+    &__container {
+        border-top: 1px solid #c6cbcd;
+        display: flex;
+        justify-content: center;
+    }
+    &__text {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #2d3033;
+        padding: 18.5px 0;
+    }
+}

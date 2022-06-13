@@ -10,23 +10,45 @@
         width: 370px;
         height: 424px;
         position: relative;
-        &::before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
-            transform: translate(0, 0) scaleX(0);
-            transform-origin: left 0;
-            transition: transform 0.25s;
-        }
-        &:hover::before {
-            content: "";
+        &:hover .meet__list {
+            opacity: 1;
             transform: translate(-16px, -16px) scaleX(1);
-            transform-origin: right 0;
-            transition: transform 0.25s;
+            transform-origin: left 0;
+        }
+    }
+    &__list {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+        transition: all 0.25s ease-in-out;
+        opacity: 0;
+        transform: translate(0, 0) scaleX(0);
+        transform-origin: right 0;
+    }
+    &__item {
+        height: 42px;
+        width: 42px;
+        margin: 0 1px;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        font-size: 30px;
+        color: #f38281;
+        background: #f9efcf;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            color: #ffffff;
+            background: #f38281;
         }
     }
     &__name {

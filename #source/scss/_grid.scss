@@ -28,24 +28,42 @@
             grid-area: img7;
         }
         position: relative;
-        &::before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
-            transform: scale(0, 0);
-            transform-origin: center;
-            transition: transform 0.25s;
+        &:hover .grid__body {
+            opacity: 1;
+            transform: scale(1);
+            border-radius: 0;
         }
-        &:hover::before {
-            content: "";
-            transform: scale(1, 1);
-            transform-origin: center;
-            transition: transform 0.3s;
-        }
+    }
+    &__body {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+        transition: all 0.25s ease-in-out;
+        opacity: 0;
+        transform: scale(0);
+        transform-origin: top;
+        border-radius: 50%;
+    }
+    &__icon {
+        margin: 0 0 100px 0;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin: 0 0 20px 0;
+    }
+    &__text {
+        font-size: 18px;
+        color: #ffffff;
     }
     &__img {
         width: 100%;

@@ -1,0 +1,137 @@
+.final {
+    background: #f8f8f8;
+    &__row {
+        padding: 80px 0 40px 0;
+        display: flex;
+        gap: 30px;
+    }
+    &__column {
+        flex: 1 1 auto;
+    }
+    &__column-1 {
+        max-width: 370px;
+    }
+    &__column-2 {
+        max-width: 470px;
+    }
+    &__column-3 {
+        width: 270px;
+    }
+    &__descr {
+        font-size: 18px;
+        color: #c6cbcd;
+        line-height: 21px;
+        padding: 40px 0;
+        max-width: 370px;
+    }
+    &__followers {
+        span {
+            font-size: 36px;
+            font-weight: 700;
+            font-style: normal;
+        }
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #2d3033;
+    }
+    &__separator {
+        width: 370px;
+        height: 1px;
+        background-color: #c6cbcd;
+        margin: 20px 0 15px 0;
+    }
+    &__follow {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__span {
+        font-style: italic;
+        font-size: 13px;
+        color: #c6cbcd;
+    }
+    &__list {
+        display: flex;
+    }
+    &__link {
+        padding: 2px;
+        margin: 0 8px;
+        font-size: 16px;
+        color: #95e1d3;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            color: #000000;
+        }
+    }
+    &__form {
+        margin: 50px 0 0 0;
+        display: flex;
+    }
+    &__email {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 237px;
+        height: 55px;
+        border: 1px solid #c6cbcd;
+    }
+    &__button {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        display: inline-flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        background: #95e1d3;
+        padding: 17px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            background: #87d2c4;
+        }
+        &:active {
+            background: #5c958a;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #2d3033;
+        margin: 0 0 37px 0;
+    }
+    &__gallery {
+        padding: 0 0 40px 0;
+    }
+    &__link {
+        font-size: 13px;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+        color: #2d3033;
+    }
+}
+.final-blog {
+    display: flex;
+    margin: 0 0 20px 0;
+    &__image {
+        margin: 0 30px 0 0;
+    }
+    &__descr {
+        max-width: 240px;
+    }
+    &__text {
+        padding: 5px 0 20px 0;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: #2d3033;
+    }
+    &__date {
+        font-size: 13px;
+        color: #2d3033;
+    }
+}
