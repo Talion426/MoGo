@@ -1,33 +1,28 @@
 .message {
     padding: 120px 0;
+    &__swiper-button-prev {
+        color: #c6cbcd;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            color: #000;
+        }
+        &::after {
+            font-size: 32px;
+        }
+    }
+    &__swiper-button-next {
+        color: #c6cbcd;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            color: #000;
+        }
+        &::after {
+            font-size: 32px;
+        }
+    }
     &__row {
         display: flex;
         justify-content: center;
-        position: relative;
-        &:before {
-            content: "";
-            position: absolute;
-            top: 80px;
-            left: 0;
-            display: inline-block;
-            width: 22.23px;
-            height: 22.23px;
-            border-bottom: 2px solid #c6cbcd;
-            border-left: 2px solid #c6cbcd;
-            transform: rotate(45deg);
-        }
-        &:after {
-            content: "";
-            position: absolute;
-            top: 80px;
-            right: 0;
-            display: block;
-            width: 22.23px;
-            height: 22.23px;
-            border-top: 2px solid #c6cbcd;
-            border-right: 2px solid #c6cbcd;
-            transform: rotate(45deg);
-        }
     }
     &__image {
         margin: 0 30px 0 0;
