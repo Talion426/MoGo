@@ -451,6 +451,110 @@ body {
 .what {
   margin: 70px 0 115px 0;
 }
+.what__text {
+  margin: 0 0 80px 0;
+}
+.what__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.what__img {
+  width: 570px;
+  height: 483px;
+}
+.what__body {
+  width: 570px;
+}
+.what__item {
+  border: 1px solid #c6cbcd;
+  margin: 0 0 22px 0;
+}
+.what__item:last-child {
+  margin: 0;
+}
+.what__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border-bottom: 1px solid #c6cbcd;
+  padding: 24px 18px;
+}
+.what__category {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #2d3033;
+  margin: 0 0 0 40px;
+}
+.what__descr {
+  max-height: 163px;
+  overflow: auto;
+  display: block;
+}
+.what__descr p {
+  max-width: 463px;
+  margin: 22px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2d3033;
+}
+.what__descr::-webkit-scrollbar {
+  width: 7px;
+}
+.what__descr::-webkit-scrollbar-track {
+  margin: 18px;
+  background: #f5f5f5;
+}
+.what__descr::-webkit-scrollbar-thumb {
+  background: #95e1d3;
+}
+
+.what input[type=radio] {
+  display: none;
+}
+
+.what__label {
+  display: inline-block;
+  width: 22.23px;
+  height: 22.23px;
+  border-bottom: 2px solid #c6cbcd;
+  border-right: 2px solid #c6cbcd;
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+  top: 35%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.what__input:checked ~ .what__label {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  right: 25px;
+  top: 45%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#what__descr-1,
+#what__descr-2,
+#what__descr-3 {
+  display: none;
+}
+
+#what-btn-1:checked ~ #what__descr-1,
+#what-btn-2:checked ~ #what__descr-2,
+#what-btn-3:checked ~ #what__descr-3 {
+  display: block;
+}
 
 .comments {
   background: #f8f8f8;
