@@ -1,10 +1,26 @@
 .meet {
     padding: 100px 0 84px 0;
+    @media (max-width: 1200px) {
+        padding: 80px 0 60px 0;
+    }
+    @media (max-width: 767px) {
+        padding: 50px 0;
+    }
     &__row {
         display: flex;
-        gap: 30px;
+        column-gap: 30px;
+        row-gap: 40px;
         justify-content: center;
         margin: 100px 0 0 0;
+        @media (max-width: 1200px) {
+            column-gap: 20px;
+            margin: 80px 0 0 0;
+        }
+        @media (max-width: 992px) {
+            margin: 50px 0 0 0;
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__image {
         width: 370px;
@@ -14,7 +30,41 @@
             opacity: 1;
             transform: translate(-16px, -16px) scaleX(1);
             transform-origin: left 0;
+            @media (max-width: 1200px) {
+                transform: translate(-12px, -12px) scaleX(1);
+            }
+            @media (max-width: 992px) {
+                transform: translate(-8px, -8px) scaleX(1);
+            }
+            @media (max-width: 767px) {
+                transform: translate(-4px, -4px) scaleX(1);
+            }
         }
+        @media (max-width: 1200px) {
+            width: 318px;
+            height: 360px;
+        }
+        @media (max-width: 992px) {
+            width: 288px;
+            height: 236.26px;
+        }
+    }
+    &__avatar--container {
+        width: 370px;
+        height: 424px;
+        @media (max-width: 1200px) {
+            width: 318px;
+            height: 360px;
+        }
+        @media (max-width: 992px) {
+            width: 288px;
+            height: 236.26px;
+        }
+    }
+    &__avatar {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     &__list {
         position: absolute;
@@ -58,11 +108,21 @@
         text-align: center;
         text-transform: uppercase;
         color: #2d3033;
+        @media (max-width: 1200px) {
+            font-size: 18px;
+            margin: 25px 0 35px 0;
+        }
+        @media (max-width: 992px) {
+            margin: 20px 0 30px 0;
+        }
     }
     &__prof {
         font-size: 18px;
         text-align: center;
         text-transform: uppercase;
         color: #2d3033;
+        @media (max-width: 1200px) {
+            font-size: 14px;
+        }
     }
 }

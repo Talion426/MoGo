@@ -27,16 +27,19 @@
                                     <li class="header-nav__item"><a href="" class="header-nav__link">blog</a></li>
                                     <li class="header-nav__item"><a href="" class="header-nav__link">contact</a></li>
                                     <li class="header-nav__item">
-                                        <a href="" class="header-nav__link"
+                                        <a href="" class="header-nav__basket--wrapper"
                                             ><img src="img/basket.svg" alt="basket" class="header-nav__basket" />
                                         </a>
                                     </li>
                                     <li class="header-nav__item">
-                                        <a href="" class="header-nav__link"
+                                        <a href="" class="header-nav__search--wrapper"
                                             ><img src="img/search.svg" alt="search" class="header-nav__search" />
                                         </a>
                                     </li>
                                 </ul>
+                                <button class="header-nav__burger-btn">
+                                    <img src="img/Burger.png" alt="" class="header-nav__burger-icon" />
+                                </button>
                             </nav>
                         </div>
                     </header>
@@ -58,13 +61,19 @@
                         congue sit fermentum risus feugiat.
                     </div>
                     <div class="about__images">
-                        <a href="" class="about__link">
-                            <div class="about__add"><img src="img/icon_add.png" alt="" class="about__img" /></div>
-                            <p class="about__span">Super team</p>
-                        </a>
-                        <img src="img/about_3.jpg" alt="" class="about__image" />
-                        <img src="img/about_1.jpg" alt="" class="about__image" />
-                        <img src="img/about_2.jpg" alt="" class="about__image" />
+                        <div class="about__image--container">
+                            <a href="" class="about__link">
+                                <div class="about__add"><img src="img/icon_add.png" alt="" class="about__img" /></div>
+                                <p class="about__span">Super team</p>
+                            </a>
+                            <img src="img/about_3.jpg" alt="" class="about__image" />
+                        </div>
+                        <div class="about__image--container">
+                            <img src="img/about_1.jpg" alt="" class="about__image" />
+                        </div>
+                        <div class="about__image--container">
+                            <img src="img/about_2.jpg" alt="" class="about__image" />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -368,6 +377,7 @@
                         </div>
                         <div class="comments__swiper-button-prev swiper-button-prev"></div>
                         <div class="comments__swiper-button-next swiper-button-next"></div>
+                        <div class="comments__swiper-pagination swiper-pagination"></div>
                     </div>
                 </div>
             </section>
@@ -398,7 +408,9 @@
                                         <a href="" class="meet__link"><i class="fa-brands fa-instagram"></i></a>
                                     </li>
                                 </ul>
-                                <img src="img/Kadin.jpg" alt="Kadin Dias" class="meet__avatar" />
+                                <div class="meet__avatar--container">
+                                    <img src="img/Kadin.jpg" alt="Kadin Dias" class="meet__avatar" />
+                                </div>
                             </div>
                             <p class="meet__name">Kadin Dias</p>
                             <p class="meet__prof">founder, ceo</p>
@@ -419,7 +431,9 @@
                                         <a href="" class="meet__link"><i class="fa-brands fa-instagram"></i></a>
                                     </li>
                                 </ul>
-                                <img src="img/Zain.jpg" alt="Zain Calzoni" class="meet__avatar" />
+                                <div class="meet__avatar--container">
+                                    <img src="img/Zain.jpg" alt="Zain Calzoni" class="meet__avatar" />
+                                </div>
                             </div>
                             <p class="meet__name">Zain Calzoni</p>
                             <p class="meet__prof">designer</p>
@@ -440,7 +454,9 @@
                                         <a href="" class="meet__link"><i class="fa-brands fa-instagram"></i></a>
                                     </li>
                                 </ul>
-                                <img src="img/Charlie.jpg" alt="Charlie George" class="meet__avatar" />
+                                <div class="meet__avatar--container">
+                                    <img src="img/Charlie.jpg" alt="Charlie George" class="meet__avatar" />
+                                </div>
                             </div>
                             <p class="meet__name">Charlie George</p>
                             <p class="meet__prof">photographer</p>
@@ -612,6 +628,7 @@
                         </div>
                         <div class="message__swiper-button-prev swiper-button-prev"></div>
                         <div class="message__swiper-button-next swiper-button-next"></div>
+                        <div class="message__swiper-pagination swiper-pagination"></div>
                     </div>
                 </div>
             </section>
@@ -795,7 +812,7 @@
                 <div class="container">
                     <div class="final__row">
                         <div class="final__column final__column-1">
-                            <div class="final__logo">
+                            <div class="final__logo--container">
                                 <img src="img/logo_MoGo_final.png" alt="" class="final__logo" />
                             </div>
                             <p class="final__descr">
@@ -884,17 +901,37 @@
                         <div class="final__column final__column-3">
                             <h6 class="final__title">Instagram</h6>
                             <div class="final__gallery">
-                                <img src="img/final_image_1.png" alt="" class="final__img" />
-                                <img src="img/final_image_2.png" alt="" class="final__img" />
-                                <img src="img/final_image_3.png" alt="" class="final__img" />
-                                <img src="img/final_image_4.png" alt="" class="final__img" />
-                                <img src="img/final_image_5.png" alt="" class="final__img" />
-                                <img src="img/final_image_6.png" alt="" class="final__img" />
-                                <img src="img/final_image_7.png" alt="" class="final__img" />
-                                <img src="img/final_image_8.png" alt="" class="final__img" />
-                                <img src="img/final_image_9.png" alt="" class="final__img" />
+                                <div class="final__img--container">
+                                    <img src="img/final_image_1.png" alt="" class="final__img" />
+                                </div>
+                                <div class="final__img--container">
+                                    <img src="img/final_image_2.png" alt="" class="final__img" />
+                                </div>
+                                <div class="final__img--container">
+                                    <img src="img/final_image_3.png" alt="" class="final__img" />
+                                </div>
+                                <div class="final__img--container">
+                                    <img src="img/final_image_4.png" alt="" class="final__img" />
+                                </div>
+                                <div class="final__img--container">
+                                    <img src="img/final_image_5.png" alt="" class="final__img" />
+                                </div>
+                                <div class="final__img--container">
+                                    <img src="img/final_image_6.png" alt="" class="final__img" />
+                                </div>
+                                <div class="final__img--container">
+                                    <img src="img/final_image_7.png" alt="" class="final__img" />
+                                </div>
+                                <div class="final__img--container">
+                                    <img src="img/final_image_8.png" alt="" class="final__img" />
+                                </div>
+                                <div class="final__img--container">
+                                    <img src="img/final_image_9.png" alt="" class="final__img" />
+                                </div>
                             </div>
-                            <a href="" class="final__link">see all photos</a>
+                            <div class="final__link--container">
+                                <a href="" class="final__link">see all photos</a>
+                            </div>
                         </div>
                     </div>
                 </div>

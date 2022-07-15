@@ -1,3 +1,9 @@
 .works {
     padding: 100px 0 70px 0;
+    @media (max-width: 1200px) {
+    padding: 80px 0 50px 0;
+    }
+    @media (max-width: 767px) {
+    padding: 50px 0 30px 0;
+    }
 }

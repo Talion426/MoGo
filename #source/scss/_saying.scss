@@ -1,27 +1,49 @@
 .saying {
     background: linear-gradient(rgba(255, 255, 255, 0.8)), url(../../img/background_3.jpg);
     background-size: cover;
-    padding: 70px 0 0 0;
+    padding: 70px 0 60px 0;
     &__row {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 -25px;
+        row-gap: 50px;
+        @media (max-width: 767px) {
+            display: grid;
+        }
     }
     &__column {
         flex: 1 0 50%;
-        padding: 0 25px;
     }
 }
 .saying-item {
     &__row {
         display: flex;
-        margin: 0 0 60px 0;
+        @media (max-width: 992px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
     }
     &__image {
-        margin: 0 50px 0 0;
+        margin: 0 30px 0 0;
+        width: 130px;
+        height: 130px;
+        @media (max-width: 1200px) {
+            width: 90px;
+            height: 90px;
+        }
+        @media (max-width: 992px) {
+            margin: 0 0 20px 0;
+        }
+    }
+    &__avatar{
+        width: 100%;
+        height: 100%;
     }
     &__body {
         max-width: 369px;
+        @media (max-width: 1200px) {
+            max-width: 316px;
+        }
     }
     &__name {
         font-weight: 700;
@@ -29,21 +51,39 @@
         text-transform: uppercase;
         color: #2d3033;
         margin: 0 0 15px 0;
+        @media (max-width: 1200px) {
+            font-size: 18px;
+        }
     }
     &__prof {
         font-size: 18px;
         text-transform: uppercase;
         color: #2d3033;
+        @media (max-width: 1200px) {
+            font-size: 14px;
+        }
     }
     &__separator {
         width: 70px;
         height: 4px;
         background-color: #f38281;
         margin: 25px 0 50px 0;
+        @media (max-width: 1200px) {
+            width: 50px;
+            margin: 20px 0 30px 0;
+        }
+        @media (max-width: 992px) {
+            width: 134px;
+            margin: 20px auto 30px auto;
+        }
     }
     &__text {
         font-size: 18px;
         line-height: 21px;
         color: #2d3033;
+        @media (max-width: 1200px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
     }
 }

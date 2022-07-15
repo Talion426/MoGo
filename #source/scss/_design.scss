@@ -1,7 +1,13 @@
 .design {
     background: linear-gradient(rgba(255, 255, 255, 0.8)), url(../img/background_2.jpg);
     background-size: cover;
-    padding: 60px 0 60px 0;
+    padding: 60px 0;
+    @media (max-width: 1200px) {
+        padding: 40px 0;
+    }
+    @media (max-width: 767px) {
+        padding: 60px 0 25px;
+    }
     &__images {
         position: relative;
         text-align: center;
@@ -10,6 +16,14 @@
     &__tablet {
         width: 686px;
         height: 525px;
+        @media (max-width: 1200px) {
+            width: 456.43px;
+            height: 356.03px;
+        }
+        @media (max-width: 600px) {
+            width: 286px;
+            height: 219px;
+        }
     }
 
     &__phone {
@@ -17,5 +31,18 @@
         height: 412px;
         position: absolute;
         transform: translate(-156px, 215px);
+        @media (max-width: 1200px) {
+            width: 135.55px;
+            height: 269.17px;
+            transform: translate(-107px, 150px);
+        }
+        @media (max-width: 600px) {
+            width: 85.12px;
+            height: 175.31px;
+            transform: translate(-115px, 90px);
+        }
+        @media (max-width: 330px) {
+            transform: translate(30px, -130px);
+        }
     }
 }

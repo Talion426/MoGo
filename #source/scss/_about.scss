@@ -1,13 +1,48 @@
 .about {
     margin: 60px 0 108px 0;
+    @media (max-width: 1200px) {
+        margin: 40px 0 60px 0;
+    }
     &__text {
         margin: 0 0 108px 0;
+        @media (max-width: 1200px) {
+            margin: 0 0 80px 0;
+        }
+        @media (max-width: 767px) {
+            margin: 0 0 40px 0;
+        }
     }
     &__images {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         gap: 30px;
+        @media (max-width: 992px) {
+            gap: 20px;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__image--container {
+        width: 370px;
+        height: 338px;
         position: relative;
+        @media (max-width: 1200px) {
+            width: 311.34px;
+            height: 282.71px;
+        }
+        @media (max-width: 992px) {
+            width: 370px;
+            height: 338px;
+        }
+        @media (max-width: 767px) {
+            width: 288px;
+            height: 258px;
+        }
+    }
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     &__link {
         display: flex;
@@ -25,10 +60,33 @@
         transition: all 0.3s ease-in-out;
         &:hover {
             transform: translate(-16px, -16px) scale(1.01);
+            @media (max-width: 1200px) {
+                transform: translate(-8px, -8px) scale(1.01);
+            }
+        }
+        @media (max-width: 1200px) {
+            transform: translate(-8px, -8px);
+            width: 311.34px;
+            height: 282.71px;
+        }
+        @media (max-width: 992px) {
+            width: 370px;
+            height: 338px;
+            transform: translate(0);
+        }
+        @media (max-width: 767px) {
+            width: 288px;
+            height: 258px;
         }
     }
     &__add {
         margin: 0 0 30px 0;
+        @media (max-width: 1200px) {
+            margin: 0 0 25px 0;
+        }
+        @media (max-width: 992px) {
+            margin: 0 0 20px 0;
+        }
     }
     &__span {
         font-weight: 500;
@@ -36,11 +94,9 @@
         line-height: 28px;
         text-transform: uppercase;
         color: #ffffff;
-    }
-    &__image {
-        display: block;
-        width: 370px;
-        height: 338px;
-        position: relative;
+        @media (max-width: 1200px) {
+            font-size: 18px;
+            line-height: 21px;
+        }
     }
 }

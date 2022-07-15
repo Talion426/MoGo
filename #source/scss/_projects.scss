@@ -5,6 +5,9 @@
     &__body {
         display: flex;
         justify-content: center;
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+        }
     }
     &__block {
         padding: 69.5px 41px;
@@ -13,12 +16,29 @@
         &:last-child {
             border-right: 1px solid #ffffff;
         }
+        @media (max-width: 1200px) {
+            padding: 49.5px 40px;
+        }
+        @media (max-width: 767px) {
+            padding: 20px 20px 10px;
+            border-left: none;
+            &:last-child {
+                border-right: none;
+            }
+            border-bottom: 1px solid #ffffff;
+        }
     }
     &__amount {
         font-size: 64px;
         margin: 0 0 25px 0;
+        @media (max-width: 1200px) {
+            font-size: 48px;
+        }
     }
     &__text {
         font-size: 24px;
+        @media (max-width: 1200px) {
+            font-size: 18px;
+        }
     }
 }

@@ -5,6 +5,16 @@
     grid-template-areas:
         "img1 img2 img3 img4"
         "img5 img6 img3 img7";
+    @media (max-width: 767px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:
+            "img1 img3"
+            "img5 img3"
+            "img7 img3"
+            "img4 img2"
+            "img6 img6";
+    }
     &__block {
         &:nth-child(1) {
             grid-area: img1;
@@ -28,6 +38,10 @@
             grid-area: img7;
         }
         position: relative;
+        max-height: 377px;
+        &:nth-child(3) {
+            max-height: none;
+        }
         &:hover .grid__body {
             opacity: 1;
             transform: scale(1);
@@ -50,9 +64,18 @@
         transform: scale(0);
         transform-origin: top;
         border-radius: 50%;
+        @media (max-width: 767px) {
+            display: none;
+        }
     }
     &__icon {
-        margin: 0 0 100px 0;
+        margin: 0 0 80px 0;
+        @media (max-width: 1200px) {
+            margin: 0 0 60px 0;
+        }
+        @media (max-width: 992px) {
+            margin: 0 0 40px 0;
+        }
     }
     &__title {
         font-weight: 700;
@@ -60,13 +83,27 @@
         text-transform: uppercase;
         color: #ffffff;
         margin: 0 0 20px 0;
+        @media (max-width: 1200px) {
+            font-size: 18px;
+            margin: 0 0 15px 0;
+        }
+        @media (max-width: 992px) {
+            font-size: 16px;
+        }
     }
     &__text {
         font-size: 18px;
         color: #ffffff;
+        @media (max-width: 1200px) {
+            font-size: 14px;
+        }
+        @media (max-width: 992px) {
+            font-size: 12px;
+        }
     }
     &__img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
 }
