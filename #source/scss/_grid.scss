@@ -38,14 +38,25 @@
             grid-area: img7;
         }
         position: relative;
-        max-height: 377px;
-        &:nth-child(3) {
-            max-height: none;
-        }
         &:hover .grid__body {
             opacity: 1;
             transform: scale(1);
             border-radius: 0;
+        }
+        @media (max-width: 767px) {
+            max-height: 320px;
+            &:nth-child(3) {
+                max-height: none;
+            }
+        }
+        @media (max-width: 565px) {
+            max-height: 270px;
+        }
+        @media (max-width: 474px) {
+            max-height: 220px;
+        }
+        @media (max-width: 390px) {
+            max-height: 150px;
         }
     }
     &__body {

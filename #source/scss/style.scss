@@ -8,6 +8,9 @@ body {
     display: flex;
     flex-flow: column nowrap;
     font-family: Raleway;
+    &._active {
+        overflow: hidden;
+    }
 }
 .main {
     flex: 1 0 auto;
@@ -93,3 +96,4 @@ body {
 @import "_map.scss";
 @import "_final.scss";
 @import "_footer.scss";
+@import "_burgerMenu.scss";

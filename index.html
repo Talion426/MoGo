@@ -21,11 +21,21 @@
                             </div>
                             <nav class="header__header-nav header-nav">
                                 <ul class="header-nav__list">
-                                    <li class="header-nav__item"><a href="" class="header-nav__link">home</a></li>
-                                    <li class="header-nav__item"><a href="" class="header-nav__link">service</a></li>
-                                    <li class="header-nav__item"><a href="" class="header-nav__link">work</a></li>
-                                    <li class="header-nav__item"><a href="" class="header-nav__link">blog</a></li>
-                                    <li class="header-nav__item"><a href="" class="header-nav__link">contact</a></li>
+                                    <li class="header-nav__item">
+                                        <a data-goto=".about" href="" class="header-nav__link">home</a>
+                                    </li>
+                                    <li class="header-nav__item">
+                                        <a data-goto=".services" href="" class="header-nav__link">service</a>
+                                    </li>
+                                    <li class="header-nav__item">
+                                        <a data-goto=".grid" href="" class="header-nav__link">work</a>
+                                    </li>
+                                    <li class="header-nav__item">
+                                        <a data-goto=".latest" href="" class="header-nav__link">blog</a>
+                                    </li>
+                                    <li class="header-nav__item">
+                                        <a data-goto=".final" href="" class="header-nav__link">contact</a>
+                                    </li>
                                     <li class="header-nav__item">
                                         <a href="" class="header-nav__basket--wrapper"
                                             ><img src="img/basket.svg" alt="basket" class="header-nav__basket" />
@@ -47,7 +57,6 @@
                     <h2 class="welcome__title">Welcome to mogo</h2>
                     <div class="welcome__separator separator"></div>
                     <div class="welcome__button"><a href="" class="welcome__link">Learn more</a></div>
-                    <!--TODO -------------------------made Slider-------------------------- -->
                 </div>
             </section>
             <section class="about">
@@ -944,6 +953,25 @@
                 </div>
             </div>
         </footer>
+        <div class="burger-menu">
+            <ul class="burger-menu__list">
+                <li class="burger-menu__item">
+                    <a data-goto=".about" class="burger-menu__link" href="#features">HOME</a>
+                </li>
+                <li class="burger-menu__item">
+                    <a data-goto=".services" class="burger-menu__link" href="#about">SERVICE</a>
+                </li>
+                <li class="burger-menu__item">
+                    <a data-goto=".grid" class="burger-menu__link" href="#pricing">WORK</a>
+                </li>
+                <li class="burger-menu__item">
+                    <a data-goto=".latest" class="burger-menu__link" href="#reviews">BLOG</a>
+                </li>
+                <li class="burger-menu__item">
+                    <a data-goto=".final" class="burger-menu__link" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
         <script src="https://kit.fontawesome.com/c6a31e549f.js" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <script src="js/main.js"></script>
